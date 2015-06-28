@@ -2,6 +2,7 @@ from array import array
 from datetime import date
 from dateutil.relativedelta import *
 from QuantLib import *
+
 class PoolCF:
     def __init__(self):
 
@@ -112,6 +113,7 @@ class ArmRateCF(PoolCF):
 
     def generateCF_CPR_CDR(self,pool,settledate,cpr,cdr,severity):
         PoolCF.generateSMM_SMD_Arr(self,pool,settledate,cpr,cdr,severity)
+        wam=0
         wam=pool.wam
         lookback=pool.lookback
         PoolCF.generatePmntSchedule(self,settledate,wam)
