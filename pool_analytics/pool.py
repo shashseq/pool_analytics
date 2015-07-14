@@ -31,7 +31,7 @@ class ArmRatePool(Pool):
         
         
 # free function instead of staticmethod of Pool class
-# unless I have better reason to do so
+# unless I have better reason to do so in the future
 
 def makePool(**kwargs):
     if 'lookback' in kwargs:
