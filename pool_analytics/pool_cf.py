@@ -1,3 +1,5 @@
+""" generate pool cashflow """
+
 from array import array
 from datetime import date
 from dateutil.relativedelta import *
